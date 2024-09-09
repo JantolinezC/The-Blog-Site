@@ -1,77 +1,91 @@
 html {
-    height: 100%;
-    width: 100%;
-    font-family: Poppins;
-  }
+  height: 100%;
+  width: 100%;
+  font-family: Poppins, Arial, sans-serif;
+}
 
-  .menu {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    background-color: #624E88;
-  }
-  
-  .menu li {
-    margin: 0 15px; /* Espaciado entre los elementos */
-  }
-  
-  .menu li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 20px;
-    text-decoration: none;
-  }
-  
-  .menu li a:hover {
-    background-color: #111;
-  }
+body {
+  background-color: #E6D9A2;
+  font-family: 'Poppins', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
 
-  footer {
-    background-color: #624E88;
-    color: white;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-    left: 0;
+main {
+  padding: 30px;
+}
+
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #624E88;
+}
+
+.menu li {
+  margin: 0 15px; /* Espaciado entre los elementos */
+}
+
+.menu li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.menu li a:hover {
+  background-color: #111;
+}
+
+footer {
+  background-color: #624E88;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
 }
 
 .left, .center, .right {
-    flex: 1;
+  flex: 1;
 }
 
 .center {
-    text-align: center;
+  text-align: center;
 }
 
 .right {
-    text-align: center;
+  text-align: center;
 }
 
 .left ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-.left ul li {
-    margin: 5px 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-h1 {
+.left ul li {
+  margin: 5px 0;
+}
+
+h1, h2, h3 {
   color: #624e88;
 }
-h3 {
-  color: #cb80ab;
+
+p, h4 {
+  color: #000;
 }
 
 h4 {
-  color: #8967b3;
+  font-weight: normal; /* Descripción de las mascotas sin negrilla */
 }
 
 .img {
@@ -89,5 +103,38 @@ h4 {
   display: flex;
   justify-content: center;
   gap: 25%;
-  margin: 0 20px 0 20px;
+  margin: 0 20px;
+}
+
+.pet-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.pet-box {
+  background-color: #fcacd9;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 180px;
+  text-align: center;
+  border: 2px dotted #8967B3; /* Borde punteado de color */
+}
+
+.image-border {
+  background-color: #fff; /* Fondo blanco de cajas que rodean las imagenes */
+  border: 3px solid #E6D9A2; /* Borde blanco alrededor de las imagenes */
+  border-radius: 10px;
+  padding: 5px;
+  margin-bottom: 10px; /* Espacio entre imagenes y texto */
+}
+
+.pet-image {
+  width: 100%;
+  height: 250px;
+  object-fit: contain;
+  border-radius: 10px;
 }
