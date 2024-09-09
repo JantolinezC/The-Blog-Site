@@ -2,4 +2,29 @@ html {
     height: 100%;
     width: 100%;
   }
+
+  .menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #624E88;
+  }
+  
+  .menu li {
+    margin: 0 15px; /* Espaciado entre los elementos */
+  }
+  
+  .menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+  }
+  
+  .menu li a:hover {
+    background-color: #111;
+  }
   
