@@ -1,6 +1,7 @@
 html {
     height: 100%;
     width: 100%;
+    font-family: Poppins;
   }
 
   .menu {
@@ -27,6 +28,7 @@ html {
   .menu li a:hover {
     background-color: #111;
   }
+
   footer {
     background-color: #624E88;
     color: white;
@@ -59,4 +61,33 @@ html {
 }
 .left ul li {
     margin: 5px 0;
+}
+
+h1 {
+  color: #624e88;
+}
+h3 {
+  color: #cb80ab;
+}
+
+h4 {
+  color: #8967b3;
+}
+
+.img {
+  width: 20%;
+  border: 4px solid #e6d9a2;
+  display: block;
+  margin: auto;
+}
+
+.logo {
+  height: 100px;
+}
+
+.inicio-barra {
+  display: flex;
+  justify-content: center;
+  gap: 25%;
+  margin: 0 20px 0 20px;
 }
